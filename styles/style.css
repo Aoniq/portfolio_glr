@@ -2,10 +2,39 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html, body {
-    /* background-color: #121827 !important; */
-}
-
 .bg-black {
     background-color: #000 !important;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 14px;
+    bottom: 0;
+    width: 2px;
+    background-color: #3b82f6;
+    margin-left: 0px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin: 2rem 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 6px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #3b82f6;
+    border-radius: 50%;
 }

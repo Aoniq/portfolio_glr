@@ -18,11 +18,11 @@
         <div class="navbar-end flex items-center">
             <div class="lg:flex space-x-4 text-gray-400 text-lg">
                 <ul class="hidden lg:flex space-x-4 text-gray-400">
-                    <li><a class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
-                    <li><a href="#" class="text-gray-100">Projects</a></li>
-                    <li><a href="#" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                    <li><a href="#" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
-                </ul>
+                    <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                    <li><a href="../projects/index.html" class="hover:text-gray-200 ease-in-out duration-300">Projects</a></li>
+                    <li><a href="../about/index.html" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                    <li><a class="text-gray-100">Contact</a></li>
+            </ul>
             
                 <div class="dropdown dropdown-left lg:hidden ml-4">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -31,97 +31,36 @@
                         </svg>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
-                        <li><a href="#" class="text-gray-100">Projects</a></li>
-                        <li><a href="#" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                        <li><a href="#" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
-                    </ul>
+                        <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                        <li><a href="../projects/index.html" class="hover:text-gray-200 ease-in-out duration-300">Projects</a></li>
+                        <li><a href="../about/index.html" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                        <li><a class="text-gray-100">Contact</a></li>
+                        </ul>
                 </div>
             </div>            
         </div>
     </div>
     
-    <div class="flex justify-center bg-black">
+    <div class="flex justify-center bg-black items-center">
         <div class="container mt-48">
-            <div class="grid grid-cols-4 gap-6">
-                <div class="col-span-4 md:col-span-1">
-                    <div class="card bg-zinc-900 bg-opacity-50">
-                        <figure class="h-48"><img src="../../assets/img/site1.png" class="object-cover w-full h-full" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- make a button on the left and a timestamp on the right -->
-                            <div class="card-actions flex justify-between items-center">
-                                <div class="flex justify-start items-center">
-                                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Bekijk meer</button>
-                                </div>
-                                <div class="flex justify-end items-center">
-                                    <div class="tooltip tooltip-bottom" data-tip="13 Juni 2023">
-                                        <p class="ml-2"><i class="far fa-clock"></i> last week</p>
-                                    </div>
-                                </div>
-                            </div>                               
-                        </div>
-                    </div>
+            <div class="bg-zinc-900 bg-opacity-50 rounded-2xl p-8 shadow lg:w-1/2 w-full mx-auto justify-center">
+                <h2 class="text-2xl text-slate-100 font-semibold mb-4">Want to collaborate? Get in touch</h2>
+                <p class="text-gray-400 text-lg mb-4">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <div class="flex gap-8">
+                    <input type="text" placeholder="Name" class="input input-bordered w-full bg-opacity-25" />
+                    <input type="email" placeholder="Email" class="input input-bordered w-full bg-opacity-25" />
                 </div>
-                <div class="col-span-4 md:col-span-1">
-                    <div class="card bg-zinc-900 bg-opacity-50">
-                        <figure class="h-48"><img src="../../assets/img/site1.png" class="object-cover w-full h-full" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="card-actions flex justify-between items-center">
-                                <div class="flex justify-start items-center">
-                                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Bekijk meer</button>
-                                </div>
-                                <div class="flex justify-end items-center">
-                                    <div class="tooltip tooltip-bottom" data-tip="13 Juni 2023">
-                                        <p class="ml-2"><i class="far fa-clock"></i> last week</p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+                <div class="mt-4">
+                    <input type="text" placeholder="Subject" class="input input-bordered w-full bg-opacity-25" />
                 </div>
-                <div class="col-span-4 md:col-span-1">
-                    <div class="card bg-zinc-900 bg-opacity-50 shadow-lg">
-                        <figure class="h-48"><img src="../../assets/img/site1.png" class="object-cover w-full h-full" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="card-actions flex justify-between items-center">
-                                <div class="flex justify-start items-center">
-                                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Bekijk meer</button>
-                                </div>
-                                <div class="flex justify-end items-center">
-                                    <div class="tooltip tooltip-bottom" data-tip="13 Juni 2023">
-                                        <p class="ml-2"><i class="far fa-clock"></i> last week</p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+                <div class="mt-4">
+                    <textarea class="textarea textarea-bordered h-24 w-full bg-opacity-25" placeholder="Message..."></textarea>
                 </div>
-                <div class="col-span-4 md:col-span-1">
-                    <div class="card bg-zinc-900 bg-opacity-50">
-                        <figure class="h-48"><img src="../../assets/img/site1.png" class="object-cover w-full h-full" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="card-title text-white">Card Title</h2>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="card-actions flex justify-between items-center">
-                                <div class="flex justify-start items-center">
-                                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Bekijk meer</button>
-                                </div>
-                                <div class="flex justify-end items-center">
-                                    <div class="tooltip tooltip-bottom" data-tip="13 Juni 2023">
-                                        <p class="ml-2"><i class="far fa-clock"></i> last week</p>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+                <div class="mt-4">
+                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Send</button>
                 </div>
-             </div>
+
+            </div>
         </div>
         
     </div>
