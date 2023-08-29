@@ -1,0 +1,11 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    /* background-color: #121827 !important; */
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
