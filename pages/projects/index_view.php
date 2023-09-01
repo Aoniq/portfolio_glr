@@ -24,10 +24,10 @@
         <div class="navbar-end flex items-center">
             <div class="lg:flex space-x-4 text-gray-400 text-lg">
                 <ul class="hidden lg:flex space-x-4 text-gray-400">
-                    <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                    <li><a href="../../index.php" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
                     <li><a class="text-gray-100">Projects</a></li>
-                    <li><a href="../../pages/about/index.html" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                    <li><a href="../../pages/contact/index.html" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
+                    <li><a href="../../pages/about/index.php" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                    <li><a href="../../pages/contact/index.php" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
                 </ul>
             
                 <div class="dropdown dropdown-left lg:hidden ml-4">
@@ -37,10 +37,10 @@
                         </svg>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                        <li><a href="../../index.php" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
                         <li><a class="text-gray-100">Projects</a></li>
-                        <li><a href="../../pages/about/index.html" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                        <li><a href="../../pages/contact/index.html" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
+                        <li><a href="../../pages/about/index.php" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                        <li><a href="../../pages/contact/index.php" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
                         </ul>
               </div>
             </div>            
@@ -56,7 +56,7 @@
                     ?>
                     <div class="col-span-3 md:col-span-1">
                     <div class="card bg-zinc-900 bg-opacity-50">
-                        <figure class="h-48"><img src="../../assets/uploads/<?= $project['ImageURL']; ?>" class="object-cover w-full h-full" alt="Shoes" /></figure>
+                        <figure class="h-48"><img src="../../assets/uploads/<?= $project['images'][0]; ?>" class="object-cover w-full h-full" alt="Shoes" /></figure>
                         <div class="card-body">
                             <h2 class="card-title text-white"><?= $project['ProjectName']; ?></h2>
                             <p><?= $project['description']; ?></p>

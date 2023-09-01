@@ -21,10 +21,10 @@
         <div class="navbar-end flex items-center">
             <div class="lg:flex space-x-4 text-gray-400 text-lg">
                 <ul class="hidden lg:flex space-x-4 text-gray-400">
-                    <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                    <li><a href="../../index.php" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
                     <li><a href="../projects/index.php" class="text-gray-100">Projects</a></li>
-                    <li><a class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                    <li><a href="../contact/index.html" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
+                    <li><a href="../about/index.php" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                    <li><a href="../contact/index.php" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
                 </ul>
 
                 <div class="dropdown dropdown-left lg:hidden ml-4">
@@ -34,49 +34,37 @@
                         </svg>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="../../index.html" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
+                        <li><a href="../../index.php" class="hover:text-gray-200 ease-in-out duration-300">Home</a></li>
                         <li><a href="../projects/index.php" class="text-gray-100">Projects</a></li>
-                        <li><a class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
-                        <li><a href="../contact/index.html" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
+                        <li><a href="../about/index.php" class="hover:text-gray-200 ease-in-out duration-300">About</a></li>
+                        <li><a href="../contact/index.php" class="hover:text-gray-200 ease-in-out duration-300">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="flex justify-center bg-black">
+    <div class="flex justify-center bg-black pb-24">
         <div class="container mt-48">
             <div class="card bg-zinc-900 bg-opacity-50">
                 <div class="card-body">
                     <div class="carousel w-full">
-                        <div id="slide1" class="carousel-item relative w-full">
-                            <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide4" class="btn btn-circle">❮</a>
-                                <a href="#slide2" class="btn btn-circle">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide2" class="carousel-item relative w-full">
-                            <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide1" class="btn btn-circle">❮</a>
-                                <a href="#slide3" class="btn btn-circle">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide3" class="carousel-item relative w-full">
-                            <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide2" class="btn btn-circle">❮</a>
-                                <a href="#slide4" class="btn btn-circle">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide4" class="carousel-item relative w-full">
-                            <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide3" class="btn btn-circle">❮</a>
-                                <a href="#slide1" class="btn btn-circle">❯</a>
-                            </div>
-                        </div>
+                        <?php
+                        // make for loop for each image
+                        for ($i = 0; $i < count($images); $i++) {
+                            $image = $images[$i];
+                        
+                            // make slide with slideid
+                            echo '<div id="slide' . $i . '" class="carousel-item relative w-full">';
+                            echo '<img src="../../assets/uploads/' . $image . '" class="h-96 w-full" />';
+                            echo '<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">';
+                            echo '<a href="#slide' . ($i - 1) . '" class="btn btn-circle">❮</a>';
+                            echo '<a href="#slide' . ($i + 1) . '" class="btn btn-circle">❯</a>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                        ?>
+                        
                     </div>
                     <div>
                         <div class="grid grid-cols-2 gap-6 mt-8">
@@ -119,6 +107,19 @@
                                         </div>
                                     </div>
 
+                                </div>
+                                <div class="w-full mt-8">
+                                    <h2 class="font-bold text-3xl text-white">Links</h2>
+                                    <!-- Assuming this is within your project_view.php file -->
+                                        <div class="flex mt-2 items-center">
+                                            <!-- github icon -->
+                                            <a href="<?= $project['github_url']; ?>" target="_blank" class="mr-2">
+                                                <i class="fa-brands fa-github text-4xl"></i>
+                                            </a>
+                                            <a href="<?= $project['demo_url']; ?>" target="_blank" class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">
+                                                Demo
+                                            </a>
+                                        </div>
                                 </div>
                             </div>
                         </div>

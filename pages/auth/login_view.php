@@ -44,21 +44,19 @@
     <div class="flex justify-center bg-black items-center">
         <div class="container mt-48">
             <div class="bg-zinc-900 bg-opacity-50 rounded-2xl p-8 shadow lg:w-1/2 w-full mx-auto justify-center">
-                <h2 class="text-2xl text-slate-100 font-semibold mb-4">Want to collaborate? Get in touch</h2>
-                <p class="text-gray-400 text-lg mb-4">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-                <div class="flex gap-8">
-                    <input type="text" placeholder="Name" class="input input-bordered w-full bg-opacity-25" />
-                    <input type="email" placeholder="Email" class="input input-bordered w-full bg-opacity-25" />
+                <form class="w-full" method="post">
+                <div class="mt-4">
+                    <label for="password" class="">Username</label>
+                    <input type="text" placeholder="" class="input input-bordered w-full bg-opacity-25" name="username" />
                 </div>
                 <div class="mt-4">
-                    <input type="text" placeholder="Subject" class="input input-bordered w-full bg-opacity-25" />
+                    <label for="password" class="mt-4">Password</label>
+                    <input type="password" class="input input-bordered w-full bg-opacity-25" name="password" />
                 </div>
                 <div class="mt-4">
-                    <textarea class="textarea textarea-bordered h-24 w-full bg-opacity-25" placeholder="Message..."></textarea>
+                    <button type="submit" name="submit" class="text-slate-100 btn bg-gradient-to-r from-blue-500 to-blue-400 transition duration-300 ease-in-out hover:shadow-lg">Login</button>
                 </div>
-                <div class="mt-4">
-                    <button class="btn bg-gradient-to-r from-blue-500 to-blue-400 text-white transition duration-300 ease-in-out hover:shadow-lg">Send</button>
-                </div>
+                </form>
 
             </div>
         </div>

@@ -1,2 +1,3 @@
 .env
 sftp.json
+pages/auth/register.php

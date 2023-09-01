@@ -64,5 +64,5 @@ while ($languageRow = mysqli_fetch_assoc($languageResult)) {
 mysqli_free_result($languageResult);
 
 // Include your view file
-include_once("./project_view.php");
+include_once("edit_view.php");
 ?>
