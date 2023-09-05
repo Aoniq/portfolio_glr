@@ -31,4 +31,11 @@ $(document).ready(function() {
         const relativeTime = timeSince(creationDate);
         $(this).text(relativeTime);
     });
+
+    // make number array to 10
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // loop through the numbers
+    for (var i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+    }
 });
